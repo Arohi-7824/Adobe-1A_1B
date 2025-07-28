@@ -1,15 +1,35 @@
-# 🧠 PDF Outline Extractor – Hackathon Round 1A
+PDF Outline & Relevance Extractor
+This tool extracts structured outlines (Title, H1–H3) from PDFs and ranks the most relevant sections based on a user persona and job-to-be-done. It supports multilingual documents and runs efficiently in CPU-only environments.
 
-## 🔍 What It Does
-- Takes PDFs from `/app/input`
-- Extracts:
-  - Title (from metadata or filename)
-  - Headings: H1, H2, H3 based on font size
-  - Page numbers for each heading
-- Outputs JSON to `/app/output`
+Features
+  - Detects document title and headings (H1, H2, H3) using heuristics and optional ML.
 
-## ⚙️ Build and Run
+  - Supports multilingual PDFs (e.g., English, Japanese).
 
-### Build the Docker Image
-```bash
-docker build --platform linux/amd64 -t pdfextractor:solution1a .
+  - Ranks top sections using semantic similarity to persona.txt and job.txt.
+
+  - Outputs structured JSON per PDF.
+
+Input
+PDFs: Place in input/
+
+Text files:
+
+  - persona.txt: User background and goals
+  - job.txt: Desired task or objective
+
+Output
+JSON per file in output/, containing:
+
+Extracted outline
+Top relevant sections
+
+Run Locally
+
+  - pip install -r requirements.txt
+  - python src/main.py
+
+Run with Docker
+
+  - docker build -t pdf-processor .
+  - docker run -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output pdf-processor
