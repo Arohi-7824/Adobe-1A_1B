@@ -1,0 +1,5 @@
+{
+       "documents": ["english.pdf", "german.pdf", "hindi.pdf", "japanese.pdf"],
+       "persona": "Language Student",
+       "job": "Extract beginner-level vocabulary lists, grammar rules, kanji characters, devanagari script, sentence patterns, and verb conjugations for English, German, Hindi, and Japanese"
+     }

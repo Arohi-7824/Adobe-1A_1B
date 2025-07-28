@@ -1,0 +1,1 @@
+Extract and summarize the most relevant sections based on visual and semantic importance.

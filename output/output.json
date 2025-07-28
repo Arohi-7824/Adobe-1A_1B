@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "input_documents": ["english.pdf", "german.pdf", "reencoded_hindi.pdf", "reencoded_japanese.pdf"],
+    "persona": "Language Student",
+    "job_to_be_done": "Extract beginner-level vocabulary lists, grammar rules, kanji characters, devanagari script, sentence patterns, and verb conjugations for English, German, Hindi, and Japanese",
+    "processing_timestamp": "2025-07-28T14:40:00Z"
+  },
+  "extracted_sections": [
+    {
+      "document": "english.pdf",
+      "page_number": 10,
+      "section_title": "A. Vocabulary",
+      "importance_rank": 1
+    },
+    {
+      "document": "english.pdf",
+      "page_number": 10,
+      "section_title": "B. Grammar: Emphasis",
+      "importance_rank": 2
+    },
+    {
+      "document": "reencoded_hindi.pdf",
+      "page_number": 6,
+      "section_title": "LESSON 1: पाठदे",
+      "importance_rank": 3
+    },
+    {
+      "document": "reencoded_japanese.pdf",
+      "page_number": 6,
+      "section_title": "LESSON 1: WATASHI WA ANNA DESU",
+      "importance_rank": 4
+    },
+    {
+      "document": "german.pdf",
+      "page_number": 8,
+      "section_title": "A summary in German",
+      "importance_rank": 5
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "english.pdf",
+      "refined_text": "Look up the meanings of common phrases under ‘dream’ and ‘sell’...",
+      "page_number": 10
+    },
+    {
+      "document": "english.pdf",
+      "refined_text": "Exercises on emphasizing key grammar structures in English...",
+      "page_number": 10
+    },
+    {
+      "document": "reencoded_hindi.pdf",
+      "refined_text": "Basic Hindi vocabulary and noun forms for beginners...",
+      "page_number": 6
+    },
+    {
+      "document": "reencoded_japanese.pdf",
+      "refined_text": "Introduction to Japanese pronouns and sentence structure...",
+      "page_number": 6
+    },
+    {
+      "document": "german.pdf",
+      "refined_text": "List of important German words and phrases with translations...",
+      "page_number": 8
+    }
+  ]
+}
